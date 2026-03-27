@@ -1,13 +1,14 @@
 package Programacion;
+
 import java.util.ArrayList;
 
-public class Eventos {
+public class Evento {
     private int id;
     private String fecha;
     private String titulo;
     private String ubicacion;
     private String descripcion;
-    private ArrayList<Galeria> coleccionGalerias = new ArrayList<>();
+    private ArrayList<Galeria> galerias;
 
     public Evento(int id, String fecha, String titulo, String ubicacion, String descripcion) {
         this.id = id;
@@ -15,6 +16,7 @@ public class Eventos {
         this.titulo = titulo;
         this.ubicacion = ubicacion;
         this.descripcion = descripcion;
+        this.galerias = new ArrayList<>();
     }
 
     public int getId() { return id; }
@@ -27,12 +29,11 @@ public class Eventos {
     public void setUbicacion(String ubicacion) { this.ubicacion = ubicacion; }
     public String getDescripcion() { return descripcion; }
     public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
-    public ArrayList<Galeria> getColeccionGalerias() { return coleccionGalerias; }
-    public void setColeccionGalerias(ArrayList<Galeria> coleccionGalerias) { this.coleccionGalerias = coleccionGalerias; }
+    public ArrayList<Galeria> getGalerias() { return galerias; }
+    public void setGalerias(ArrayList<Galeria> galerias) { this.galerias = galerias; }
 
     @Override
     public String toString() {
-        return "Evento{id=" + id + ", fecha='" + fecha + "', titulo='" + titulo + "', ubicacion='" + ubicacion + "', descripcion='" + descripcion + "'}";
+        return "Evento{id=" + id + ", fecha='" + fecha + "', titulo='" + titulo + "', ubicacion='" + ubicacion + "', descripcion='" + descripcion + "', galerias=" + galerias + "}";
     }
 }
-
