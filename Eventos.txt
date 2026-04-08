@@ -1,0 +1,37 @@
+Eventos extraídos del Mockup:
+
+1.
+Nombre: Festival de Jazz Nocturno
+Fecha: 10-07-2026
+Lugar: Laboral Teatro
+Descripción: Noche de improvisaciones jazz con bandas locales
+
+2.
+Nombre: Xixón Folk Festival
+Fecha: 25-06-2026
+Lugar: Parque Fluvial
+Descripción: Gaitas y conciertos folk en vivo.
+
+3.
+Nombre: Primera Feria de Plantas
+Fecha: 15-06-2026
+Lugar: Jardín Botánico
+Descripción: Plantas exóticas y locales
+
+4.
+Nombre: Arte Urbano Astur
+Fecha: 05-08-2026
+Lugar: Centro Niemeyer, Avilés
+Descripción: Graffiti y street art de artistas emergentes de Asturias, interactivo y fotogénico
+
+5.
+Nombre: Ópera "El Mar Astur"
+Fecha: 14-08-2026
+Lugar: Teatro Campoamor, Oviedo
+Descripción: Drama lírico sobre leyendas marítimas locales
+
+6.
+Nombre: Mercado Artesanal
+Fecha: 09-09-2026
+Lugar: Plaza del Parchís, Llanes
+Descripción: Artesanía local, gastronomía y talleres
