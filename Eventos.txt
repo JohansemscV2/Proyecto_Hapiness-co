@@ -35,3 +35,64 @@ Nombre: Mercado Artesanal
 Fecha: 09-09-2026
 Lugar: Plaza del Parchís, Llanes
 Descripción: Artesanía local, gastronomía y talleres
+
+7.
+Nombre: American Buffalo
+Fecha: 05-06-2026
+Lugar: Teatro Jovellanos
+Descripción: Drama Mamet sobre ambición y traición.
+
+8.
+Nombre: Xixon folk Festival
+Fecha: 28-08-2026
+Lugar: Parque Fluvial
+Descripción: Fiesta Concierto folk en directo.
+
+9.
+Nombre: Primera Feria de Plantas
+Fecha: 15-06-2026
+Lugar: Jardín Botánico
+Descripción: Plantas exóticas y locales
+
+
+--- EVENTOS Obligatorios ---
+
+[Historial]
+
+ID 1
+Nombre: Concierto de Año Nuevo Asturiano
+Fecha: 01-01-2026
+Lugar: Auditorio Príncipe Felipe, Oviedo
+Descripción: Celebración de la entrada del año con la Orquesta Sinfónica del Principado de Asturias.
+
+ID 2
+Nombre: Muestra de Quesos Tradicionales
+Fecha: 12-01-2026
+Lugar: Plaza Mayor, Cangas de Onís
+Descripción: Degustación y venta de los mejores quesos de la región, destacando Gamoneo y Cabrales.
+
+ID 3
+Nombre: Exposición "Memoria Minera"
+Fecha: 24-01-2026
+Lugar: Museo de la Minería, El Entrego
+Descripción: Rescate histórico y fotográfico sobre la vida en las cuencas mineras en el siglo XX.
+
+[Próximos]
+
+ID 4
+Nombre: Festival de la Sidra Artesana
+Fecha: 05-06-2026
+Lugar: Puerto de Gijón
+Descripción: Cata de sidras, escanciado y música tradicional asturiana frente al mar.
+
+ID 5
+Nombre: Ruta Senderista Románica
+Fecha: 15-06-2026
+Lugar: Santa María del Naranco, Oviedo
+Descripción: Visita cultural para conocer los secretos de la arquitectura prerrománica y senderismo.
+
+ID 6
+Nombre: Certamen de Cine Celta
+Fecha: 25-06-2026
+Lugar: Casa de Cultura, Ribadesella
+Descripción: Proyección de cortometrajes independientes del arco atlántico.

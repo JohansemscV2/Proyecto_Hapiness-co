@@ -1,0 +1,29 @@
+/* assets/css/variables.css */
+:root {
+    /* Colores basados en el mockup */
+    --color-primary: #FF1493; /* Rosa brillante (DeepPink) */
+    --color-primary-hover: #ff47a5;
+    --color-background-dark: #121420; /* Azul oscuro navi */
+    --color-background-header: #0d0f18; /* Header un poco más oscuro */
+    --color-background-card: rgba(255, 255, 255, 0.95); /* Blanco para las tarjetas */
+    --color-text-light: #F4F4F9;
+    --color-text-dark: #1F2233;
+    
+    /* Tipografía */
+    /* Utilizaremos Inter o Roboto de Google Fonts (añadido en index.html) */
+    --font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+    
+    /* Variables de Espaciado y Layout */
+    --header-height: 80px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 24px;
+    
+    /* Transiciones para animaciones */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.4s ease;
+}

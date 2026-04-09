@@ -1,135 +1,124 @@
--- Crear la base de datos y usarla
-CREATE DATABASE IF NOT EXISTS happiness_co;
+-- Creación de la base de datos
+DROP DATABASE IF EXISTS happiness_co;
+CREATE DATABASE happiness_co;
 USE happiness_co;
 
--- --------------------------------------------------------
--- CREACIÓN DE TABLAS
--- --------------------------------------------------------
+-- 1. Crear tablas
 
--- Tabla Usuarios
-CREATE TABLE usuarios (
+CREATE TABLE Usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
-    email VARCHAR(100) UNIQUE NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL
 );
 
--- Tabla Eventos
-CREATE TABLE eventos (
+CREATE TABLE Eventos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     fecha DATE NOT NULL,
     titulo VARCHAR(150) NOT NULL,
-    ubicacion VARCHAR(200) NOT NULL,
-    descripcion TEXT
+    ubicacion VARCHAR(255) NOT NULL,
+    descripcion TEXT NOT NULL
 );
 
--- Tabla Galerías
-CREATE TABLE galerias (
+CREATE TABLE Galerias (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(150) NOT NULL,
     id_evento INT NOT NULL,
-    FOREIGN KEY (id_evento) REFERENCES eventos(id) ON DELETE CASCADE
+    FOREIGN KEY (id_evento) REFERENCES Eventos(id) ON DELETE CASCADE
 );
 
--- Tabla Imágenes de las galerías
-CREATE TABLE imagenes_galerias (
+CREATE TABLE Imagenes_galerias (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(150) NOT NULL,
     imagen VARCHAR(255) NOT NULL,
     id_galeria INT NOT NULL,
-    FOREIGN KEY (id_galeria) REFERENCES galerias(id) ON DELETE CASCADE
+    FOREIGN KEY (id_galeria) REFERENCES Galerias(id) ON DELETE CASCADE
 );
 
--- Tabla Favoritos
-CREATE TABLE favoritos (
+CREATE TABLE Favoritos (
     id_usuario INT NOT NULL,
     id_evento INT NOT NULL,
     PRIMARY KEY (id_usuario, id_evento),
-    FOREIGN KEY (id_usuario) REFERENCES usuarios(id) ON DELETE CASCADE,
-    FOREIGN KEY (id_evento) REFERENCES eventos(id) ON DELETE CASCADE
+    FOREIGN KEY (id_usuario) REFERENCES Usuarios(id) ON DELETE CASCADE,
+    FOREIGN KEY (id_evento) REFERENCES Eventos(id) ON DELETE CASCADE
 );
 
--- --------------------------------------------------------
--- INSERCIÓN DE DATOS
--- --------------------------------------------------------
+-- 2. Inserción de Usuarios (al menos 3)
+INSERT INTO Usuarios (nombre, email, password) VALUES
+('Johan Sierra', 'johan@happiness.co', 'pass123'),
+('Ana Gomez', 'ana@happiness.co', 'pass123'),
+('Carlos Ruiz', 'carlos@happiness.co', 'pass123');
 
--- Usuarios (Mínimo tres usuarios)
-INSERT INTO usuarios (nombre, email, password) VALUES
-('Ana Martínez', 'ana@example.com', 'pass123'),
-('Luis Gómez', 'luis@example.com', 'pass456'),
-('Carlos Ruiz', 'carlos@example.com', 'pass789');
+-- 3. Inserción de Eventos Obligatorios (Historial y Próximos)
+-- NOTA: Formato de fecha YYYY-MM-DD
+INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES
+(1, '2026-01-01', 'Concierto de Año Nuevo Asturiano', 'Auditorio Príncipe Felipe, Oviedo', 'Celebración de la entrada del año con la Orquesta Sinfónica del Principado de Asturias.'),
+(2, '2026-01-12', 'Muestra de Quesos Tradicionales', 'Plaza Mayor, Cangas de Onís', 'Degustación y venta de los mejores quesos de la región, destacando Gamoneo y Cabrales.'),
+(3, '2026-01-24', 'Exposición "Memoria Minera"', 'Museo de la Minería, El Entrego', 'Rescate histórico y fotográfico sobre la vida en las cuencas mineras en el siglo XX.'),
+(4, '2026-06-05', 'Festival de la Sidra Artesana', 'Puerto de Gijón', 'Cata de sidras, escanciado y música tradicional asturiana frente al mar.'),
+(5, '2026-06-15', 'Ruta Senderista Románica', 'Santa María del Naranco, Oviedo', 'Visita cultural para conocer los secretos de la arquitectura prerrománica y senderismo.'),
+(6, '2026-06-25', 'Certamen de Cine Celta', 'Casa de Cultura, Ribadesella', 'Proyección de cortometrajes independientes del arco atlántico.');
 
--- Eventos obligatorios (Seis eventos: tres del historial y tres próximos respecto a 28-02-2026)
--- Historial: 01-01-2026, 12-01-2026, 24-01-2026 (IDs 1, 2, 3)
--- Próximos: 05-06-2026, 15-06-2026, 25-06-2026 (IDs 4, 5, 6)
-INSERT INTO eventos (fecha, titulo, ubicacion, descripcion) VALUES
-('2026-01-01', 'Cena de Año Nuevo', 'Salón Mágico', 'Evento especial de año nuevo con cena y baile.'),
-('2026-01-12', 'Concierto Acústico', 'Teatro Principal', 'Concierto íntimo de artistas locales.'),
-('2026-01-24', 'Feria de Arte', 'Plaza Central', 'Exposición de arte contemporáneo al aire libre.'),
-('2026-06-05', 'Festival de Verano', 'Parque de la Ciudad', 'Festival de música al aire libre.'),
-('2026-06-15', 'Taller de Fotografía', 'Estudio Creativo', 'Taller práctico de fotografía de retratos.'),
-('2026-06-25', 'Noche de Comedia', 'Club de la Comedia', 'Espectáculo de stand-up con comediantes invitados.');
+-- 4. Inserción de Galerías para los 3 eventos del historial
+INSERT INTO Galerias (id, titulo, id_evento) VALUES
+(1, 'Galería: Concierto de Año Nuevo', 1),
+(2, 'Galería: Muestra de Quesos', 2),
+(3, 'Galería: Memoria Minera', 3);
 
--- Galerías (Los tres eventos mínimos del historial tendrán una galería cada uno)
--- Eventos del historial: ID 1, 2, 3
-INSERT INTO galerias (titulo, id_evento) VALUES
-('Fotos de Año Nuevo', 1),       -- ID 1
-('Momentos del Concierto', 2),   -- ID 2
-('Obras de la Feria', 3);        -- ID 3
+-- 5. Inserción de Imágenes (mínimo 3 por cada galería del historial)
+INSERT INTO Imagenes_galerias (titulo, imagen, id_galeria) VALUES
+('Orquesta Afinando', 'orquesta_1.jpg', 1),
+('Público Entusiasmado', 'publico_oviedo.jpg', 1),
+('Cierre Espectacular', 'cierre_concierto.jpg', 1),
+('Stand de Cabrales', 'queso_cabrales.jpg', 2),
+('Desgustación en la Plaza', 'degustacion_quesos.jpg', 2),
+('Artesanos Queseros', 'artesanos_cangas.jpg', 2),
+('Entrada de Mina', 'mina_antigua.jpg', 3),
+('Herramientas Históricas', 'herramientas.jpg', 3),
+('Fotografía de la Cuenca', 'foto_blanco_negro.jpg', 3);
 
--- Imágenes (Mínimo tres imágenes por cada galería)
-INSERT INTO imagenes_galerias (titulo, imagen, id_galeria) VALUES
--- Galería 1 (Evento 1)
-('Brindis', 'brindis.jpg', 1),
-('Gente Bailando', 'baile.jpg', 1),
-('Decoración', 'decoracion.jpg', 1),
--- Galería 2 (Evento 2)
-('Cantante principal', 'cantante.jpg', 2),
-('Público emocionado', 'publico.jpg', 2),
-('Escenario iluminado', 'escenario.jpg', 2),
--- Galería 3 (Evento 3)
-('Cuadro al óleo', 'cuadro1.jpg', 3),
-('Escultura de bronce', 'escultura.jpg', 3),
-('Artista pintando', 'artista.jpg', 3);
+-- 6. Inserción de Favoritos
+-- Cada usuario debe tener al menos 3 favoritos, y al menos 2 del historial (IDs 1,2,3).
+INSERT INTO Favoritos (id_usuario, id_evento) VALUES
+-- Usuario 1 (Favoritos: 1, 2, 4): 2 historial, 1 futuro
+(1, 1), (1, 2), (1, 4),
+-- Usuario 2 (Favoritos: 2, 3, 5): 2 historial, 1 futuro
+(2, 2), (2, 3), (2, 5),
+-- Usuario 3 (Favoritos: 1, 3, 6): 2 historial, 1 futuro
+(3, 1), (3, 3), (3, 6);
 
--- Favoritos (Cada usuario tendrá, al menos, tres eventos favoritos y, al menos, dos del historial)
--- Eventos Historial IDs: 1, 2, 3.  Eventos Próximos IDs: 4, 5, 6.
--- Usuario 1: 1, 2 (historial) y 4 (próximo)
-INSERT INTO favoritos (id_usuario, id_evento) VALUES (1, 1), (1, 2), (1, 4);
--- Usuario 2: 2, 3 (historial) y 5 (próximo)
-INSERT INTO favoritos (id_usuario, id_evento) VALUES (2, 2), (2, 3), (2, 5);
--- Usuario 3: 1, 3 (historial) y 6 (próximo)
-INSERT INTO favoritos (id_usuario, id_evento) VALUES (3, 1), (3, 3), (3, 6);
 
--- --------------------------------------------------------
--- CREACIÓN DE VISTAS
--- --------------------------------------------------------
+-- 7. Creación de las Vistas solicitadas
 
--- 1. Devuelvan las galerías anteriores al 28-02-2026.
-CREATE OR REPLACE VIEW vista_galerias_historial AS
-SELECT g.id, g.titulo AS titulo_galeria, e.fecha, e.titulo AS titulo_evento
-FROM galerias g
-JOIN eventos e ON g.id_evento = e.id
+-- Vista 1: Devuelvan las galerías anteriores al 28-02-2026.
+DROP VIEW IF EXISTS v_galerias_historicas;
+CREATE VIEW v_galerias_historicas AS
+SELECT g.id AS galeria_id, g.titulo AS galeria_titulo, e.fecha, e.titulo AS evento_titulo
+FROM Galerias g
+JOIN Eventos e ON g.id_evento = e.id
 WHERE e.fecha < '2026-02-28';
 
--- 2. Devuelvan los eventos favoritos del usuario 1.
-CREATE OR REPLACE VIEW vista_favoritos_usuario_1 AS
-SELECT e.id, e.fecha, e.titulo, e.ubicacion, e.descripcion
-FROM eventos e
-JOIN favoritos f ON e.id = f.id_evento
+-- Vista 2: Devuelvan los eventos favoritos del usuario 1.
+DROP VIEW IF EXISTS v_favoritos_usuario_1;
+CREATE VIEW v_favoritos_usuario_1 AS
+SELECT f.id_usuario, e.id AS evento_id, e.titulo AS evento_titulo, e.fecha
+FROM Favoritos f
+JOIN Eventos e ON f.id_evento = e.id
 WHERE f.id_usuario = 1;
 
--- 3. Devuelvan las imágenes de la galería del evento del 12-01-2026 (usar su id para crear la vista, no la fecha).
--- El evento del 12-01-2026 se corresponde con el id_evento = 2
-CREATE OR REPLACE VIEW vista_imagenes_evento_2 AS
-SELECT ig.id, ig.titulo, ig.imagen, ig.id_galeria
-FROM imagenes_galerias ig
-JOIN galerias g ON ig.id_galeria = g.id
+-- Vista 3: Devuelvan las imágenes de la galería del evento del 12-01-2026 (usar su id para crear la vista, no la fecha).
+-- El evento del 12-01-2026 tiene ID 2 (Muestra de Quesos Tradicionales).
+DROP VIEW IF EXISTS v_imagenes_evento_12_01_2026;
+CREATE VIEW v_imagenes_evento_12_01_2026 AS
+SELECT ig.id AS imagen_id, ig.titulo AS imagen_titulo, ig.imagen, g.id_evento
+FROM Imagenes_galerias ig
+JOIN Galerias g ON ig.id_galeria = g.id
 WHERE g.id_evento = 2;
 
--- 4. Devuelvan los eventos favoritos del usuario 2 posteriores al 28-02-2026.
-CREATE OR REPLACE VIEW vista_favoritos_usuario_2_proximos AS
-SELECT e.id, e.fecha, e.titulo, e.ubicacion, e.descripcion
-FROM eventos e
-JOIN favoritos f ON e.id = f.id_evento
+-- Vista 4: Devuelvan los eventos favoritos del usuario 2 posteriores al 28-02-2026.
+DROP VIEW IF EXISTS v_favoritos_usuario_2_futuros;
+CREATE VIEW v_favoritos_usuario_2_futuros AS
+SELECT f.id_usuario, e.id AS evento_id, e.titulo AS evento_titulo, e.fecha
+FROM Favoritos f
+JOIN Eventos e ON f.id_evento = e.id
 WHERE f.id_usuario = 2 AND e.fecha > '2026-02-28';
