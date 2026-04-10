@@ -57,7 +57,10 @@ INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES
 (3, '2026-01-24', 'Exposición "Memoria Minera"', 'Museo de la Minería, El Entrego', 'Rescate histórico y fotográfico sobre la vida en las cuencas mineras en el siglo XX.'),
 (4, '2026-06-05', 'Festival de la Sidra Artesana', 'Puerto de Gijón', 'Cata de sidras, escanciado y música tradicional asturiana frente al mar.'),
 (5, '2026-06-15', 'Ruta Senderista Románica', 'Santa María del Naranco, Oviedo', 'Visita cultural para conocer los secretos de la arquitectura prerrománica y senderismo.'),
-(6, '2026-06-25', 'Certamen de Cine Celta', 'Casa de Cultura, Ribadesella', 'Proyección de cortometrajes independientes del arco atlántico.');
+(6, '2026-06-25', 'Certamen de Cine Celta', 'Casa de Cultura, Ribadesella', 'Proyección de cortometrajes independientes del arco atlántico.'),
+(7, '2026-06-05', 'American Buffalo', 'Teatro Jovellanos', 'Drama Mamet sobre ambición y traición.'),
+(8, '2026-08-28', 'Xixon folk Festival', 'Parque Fluvial', 'Fiesta Concierto folk en directo.'),
+(9, '2026-06-15', 'Primera Feria de Plantas', 'Jardín Botánico', 'Plantas exóticas y locales.');
 
 -- 4. Inserción de Galerías para los 3 eventos del historial
 INSERT INTO Galerias (id, titulo, id_evento) VALUES

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Happiness&Co</title>
-    
+
     <!-- CSS Modules -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/home.css">
 </head>
+
 <body>
 
     <!-- Cabecera -->
@@ -22,7 +24,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Inicio</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="proximos-eventos.html">Proximos Eventos</a></li>
                     <li><a href="historial.html">Historial</a></li>
                     <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
                     <li><a href="fuentes.html">Fuentes</a></li>
@@ -32,10 +34,11 @@
         </div>
     </header>
 
-    <div class="container">
+    <div class="container search-wrapper">
         <!-- Search bar layout from mockup -->
         <div class="search-bar">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="11" cy="11" r="8"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
@@ -48,9 +51,10 @@
         <div class="hero-content">
             <span class="hero-date">05-06-2026 | Puerto de Gijón</span>
             <h1 class="hero-title">Festival de la Sidra Artesana</h1>
-            <p style="color: white; margin-bottom: 20px;">Cata de sidras, escanciado y música tradicional asturiana frente al mar.</p>
+            <p style="color: white; margin-bottom: 20px;">Cata de sidras, escanciado y música tradicional asturiana
+                frente al mar.</p>
             <a href="evento.html?id=4" class="btn">Ver evento destacado</a>
-            
+
             <!-- Estadísticas integradas bajo el título del evento -->
             <div class="hero-stats">
                 <div class="stat-item">
@@ -73,18 +77,49 @@
         </div>
     </section>
 
+    <!-- Cinta de Beneficios (Relleno Visual Utilitario) -->
+    <div class="container">
+        <section class="benefits-ribbon">
+            <div class="benefit-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>100% Seguro y Fiable</span>
+            </div>
+            <div class="benefit-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+                <span>Descubre Nuevos Lugares</span>
+            </div>
+            <div class="benefit-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>Comunidad Activa</span>
+            </div>
+        </section>
+    </div>
+
     <!-- Contenido Principal -->
     <main class="container home-layout">
-        
+
         <!-- Próximos Eventos -->
         <section class="upcoming-events">
             <h2 class="section-title">Próximos eventos</h2>
             <div class="events-grid">
-                
+
                 <!-- Tarjeta 1 -->
                 <article class="event-card">
                     <!-- Hueco para imagen -->
-                    <img src="" alt="Ruta Senderista" class="event-img">
+                    <img src="./assets/Img/Home/Santa_María_del_Naranco_2021.jpg" alt="Santa_María_del_Naranco_2021">
                     <div class="event-details">
                         <h3 class="event-title">Ruta Senderista Románica</h3>
                         <div class="event-meta">
@@ -92,7 +127,8 @@
                             <span class="separator">|</span>
                             <span>Santa María del Naranco</span>
                         </div>
-                        <p class="event-desc">Visita cultural para conocer los secretos de la arquitectura prerrománica y senderismo.</p>
+                        <p class="event-desc">Visita cultural para conocer los secretos de la arquitectura prerrománica
+                            y senderismo.</p>
                         <a href="evento.html?id=5" class="event-link">Ver evento</a>
                     </div>
                 </article>
@@ -100,7 +136,7 @@
                 <!-- Tarjeta 2 -->
                 <article class="event-card">
                     <!-- Hueco para imagen -->
-                    <img src="" alt="Cine Celta" class="event-img">
+                    <img src="./assets/Img/Home/c79958bc-26c6-4d6f-9188-8f460b5cc9dc.jpg" alt="Ribadesella">
                     <div class="event-details">
                         <h3 class="event-title">Certamen de Cine Celta</h3>
                         <div class="event-meta">
@@ -116,7 +152,7 @@
                 <!-- Tarjeta 3 (Para igualar referencia visual) -->
                 <article class="event-card">
                     <!-- Hueco para imagen -->
-                    <img src="" alt="Feria de Plantas" class="event-img">
+                    <img src="./assets/Img/Home/Slide 4_Laberinto de laurel.jpg" alt="Jardin botanico">
                     <div class="event-details">
                         <h3 class="event-title">Primera Feria de Plantas</h3>
                         <div class="event-meta">
@@ -130,17 +166,21 @@
                 </article>
 
             </div>
+
+            <div class="events-footer">
+                <a href="eventos.html" class="btn btn-outline">Ver todo el catálogo &rarr;</a>
+            </div>
         </section>
 
         <!-- Lateral: Recomendados (Eventos Históricos) -->
         <aside class="sidebar">
             <h2 class="section-title">Recomendados</h2>
             <div class="sidebar-grid">
-                
+
                 <!-- Recomendado 1 -->
                 <article class="rec-card">
                     <!-- Hueco para imagen -->
-                    <img src="" alt="Concierto Año Nuevo" class="rec-img">
+                    <img src="./assets/Img/happines-and-co-propuesta-01.jpg" alt="Concierto Año Nuevo" class="rec-img">
                     <div class="rec-details">
                         <h4 class="rec-title">Concierto de Año Nuevo Asturiano</h4>
                         <div class="rec-meta">01-01-2026</div>
@@ -152,7 +192,7 @@
                 <!-- Recomendado 2 -->
                 <article class="rec-card">
                     <!-- Hueco para imagen -->
-                    <img src="" alt="Quesos Tradicionales" class="rec-img">
+                    <img src="./assets/Img/happines-and-co-propuesta-02.jpg" alt="Quesos Tradicionales" class="rec-img">
                     <div class="rec-details">
                         <h4 class="rec-title">Muestra de Quesos Tradicionales</h4>
                         <div class="rec-meta">12-01-2026</div>
@@ -164,7 +204,7 @@
                 <!-- Recomendado 3 -->
                 <article class="rec-card">
                     <!-- Hueco para imagen -->
-                    <img src="" alt="Memoria Minera" class="rec-img">
+                    <img src="./assets/Img/happines-and-co-propuesta-03.jpg" alt="Memoria Minera" class="rec-img">
                     <div class="rec-details">
                         <h4 class="rec-title">Exposición "Memoria Minera"</h4>
                         <div class="rec-meta">24-01-2026</div>
@@ -174,6 +214,16 @@
                 </article>
 
             </div>
+
+            <!-- Widget Newsletter -->
+            <div class="newsletter-widget">
+                <h3 class="news-title">¿Te gustan los planes?</h3>
+                <p class="news-desc">Únete y recibe los mejores eventos de Asturias y España en tu correo.</p>
+                <form class="news-form" onsubmit="event.preventDefault()">
+                    <input type="email" placeholder="Tu correo electrónico..." required>
+                    <button type="submit" class="btn">Suscribirse</button>
+                </form>
+            </div>
         </aside>
 
     </main>
@@ -182,11 +232,35 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <!-- Enlaces de redes sociales con iconos placeholders (letras) -->
-                <a href="#" class="social-link" aria-label="Instagram">IG</a>
-                <a href="#" class="social-link" aria-label="Facebook">FB</a>
-                <a href="#" class="social-link" aria-label="Twitter/X">X</a>
-                <a href="#" class="social-link" aria-label="YouTube">YT</a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter/X">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4l11.73 16h5L9 4H4z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z">
+                        </path>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                    </svg>
+                </a>
             </div>
             <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem;">
                 &copy; 2026 HAPPINESS&Co. Todos los derechos reservados.
@@ -195,4 +269,5 @@
     </footer>
 
 </body>
+
 </html>

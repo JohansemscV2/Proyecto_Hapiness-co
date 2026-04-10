@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Próximos Eventos - Happiness&Co</title>
+
+    <!-- CSS Modules -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/proximos-eventos.css">
+</head>
+
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">HAPPINESS<span class="amp">&</span>Co</div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="proximos-eventos.html" class="active">Próximos Eventos</a></li>
+                    <li><a href="historial.html">Historial</a></li>
+                    <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="fuentes.html">Fuentes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container search-wrapper" style="padding-top: 2rem;">
+        <!-- Search bar layout -->
+        <div class="search-bar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" placeholder="¿Qué tipo de evento buscas?">
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <main class="container eventos-container">
+        <h1 class="page-title">Catálogo de Eventos</h1>
+
+        <div class="eventos-list">
+
+            <!-- 1. Festival de Jazz Nocturno (Música -> Rosa) -->
+            <article class="evento-horizontal border-pink">
+                <div class="evento-img-ph">Imagen Placeholder</div>
+                <div class="evento-content">
+                    <div class="evento-date">10-07-2026</div>
+                    <h2 class="evento-title">Festival de Jazz Nocturno</h2>
+                    <div class="evento-location">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Laboral Teatro
+                    </div>
+                    <p class="evento-desc">Noche de improvisaciones jazz con bandas locales</p>
+                    <a href="#" class="btn-event btn-pink">Ver evento &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 2. Xixón Folk Festival (Música -> Rosa) -->
+            <article class="evento-horizontal border-pink">
+                <div class="evento-img-ph">Imagen Placeholder</div>
+                <div class="evento-content">
+                    <div class="evento-date">25-06-2026</div>
+                    <h2 class="evento-title">Xixón Folk Festival</h2>
+                    <div class="evento-location">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Parque Fluvial
+                    </div>
+                    <p class="evento-desc">Gaitas y conciertos folk en vivo.</p>
+                    <a href="#" class="btn-event btn-pink">Ver evento &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 3. Primera Feria de Plantas (Exposición -> Naranja) -->
+            <article class="evento-horizontal border-orange">
+                <div class="evento-img-ph">Imagen Placeholder</div>
+                <div class="evento-content">
+                    <div class="evento-date">15-06-2026</div>
+                    <h2 class="evento-title">Primera Feria de Plantas</h2>
+                    <div class="evento-location">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Jardín Botánico
+                    </div>
+                    <p class="evento-desc">Plantas exóticas y locales</p>
+                    <a href="#" class="btn-event btn-orange">Ver evento &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 4. Arte Urbano Astur (Exposición -> Naranja) -->
+            <article class="evento-horizontal border-orange">
+                <div class="evento-img-ph">Imagen Placeholder</div>
+                <div class="evento-content">
+                    <div class="evento-date">05-08-2026</div>
+                    <h2 class="evento-title">Arte Urbano Astur</h2>
+                    <div class="evento-location">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Centro Niemeyer, Avilés
+                    </div>
+                    <p class="evento-desc">Graffiti y street art de artistas emergentes de Asturias, interactivo y fotogénico</p>
+                    <a href="#" class="btn-event btn-orange">Ver evento &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 5. Ópera "El Mar Astur" (Música -> Rosa) -->
+            <article class="evento-horizontal border-pink">
+                <div class="evento-img-ph">Imagen Placeholder</div>
+                <div class="evento-content">
+                    <div class="evento-date">14-08-2026</div>
+                    <h2 class="evento-title">Ópera "El Mar Astur"</h2>
+                    <div class="evento-location">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Teatro Campoamor, Oviedo
+                    </div>
+                    <p class="evento-desc">Drama lírico sobre leyendas marítimas locales</p>
+                    <a href="#" class="btn-event btn-pink">Ver evento &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 6. Mercado Artesanal (Exposición -> Naranja) -->
+            <article class="evento-horizontal border-orange">
+                <div class="evento-img-ph">Imagen Placeholder</div>
+                <div class="evento-content">
+                    <div class="evento-date">09-09-2026</div>
+                    <h2 class="evento-title">Mercado Artesanal</h2>
+                    <div class="evento-location">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Plaza del Parchís, Llanes
+                    </div>
+                    <p class="evento-desc">Artesanía local, gastronomía y talleres</p>
+                    <a href="#" class="btn-event btn-orange">Ver evento &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 7. American Buffalo (Cine/Teatro -> Azul) -->
+            <article class="evento-horizontal border-blue">
+                <div class="evento-img-ph">Imagen Placeholder</div>
+                <div class="evento-content">
+                    <div class="evento-date">05-06-2026</div>
+                    <h2 class="evento-title">American Buffalo</h2>
+                    <div class="evento-location">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Teatro Jovellanos
+                    </div>
+                    <p class="evento-desc">Drama Mamet sobre ambición y traición.</p>
+                    <a href="#" class="btn-event btn-blue">Ver evento &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 8. Festival de la Sidra Artesana (Música tradicional -> Rosa) -->
+            <article class="evento-horizontal border-pink">
+                <div class="evento-img-ph">Imagen Placeholder</div>
+                <div class="evento-content">
+                    <div class="evento-date">05-06-2026</div>
+                    <h2 class="evento-title">Festival de la Sidra Artesana</h2>
+                    <div class="evento-location">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Puerto de Gijón
+                    </div>
+                    <p class="evento-desc">Cata de sidras, escanciado y música tradicional asturiana frente al mar.</p>
+                    <a href="#" class="btn-event btn-pink">Ver evento &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 9. Ruta Senderista Románica (Exposición/Senderismo -> Naranja) -->
+            <article class="evento-horizontal border-orange">
+                <div class="evento-img-ph">Imagen Placeholder</div>
+                <div class="evento-content">
+                    <div class="evento-date">15-06-2026</div>
+                    <h2 class="evento-title">Ruta Senderista Románica</h2>
+                    <div class="evento-location">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Santa María del Naranco, Oviedo
+                    </div>
+                    <p class="evento-desc">Visita cultural para conocer los secretos de la arquitectura prerrománica y senderismo.</p>
+                    <a href="#" class="btn-event btn-orange">Ver evento &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 10. Certamen de Cine Celta (Cine -> Azul) -->
+            <article class="evento-horizontal border-blue">
+                <div class="evento-img-ph">Imagen Placeholder</div>
+                <div class="evento-content">
+                    <div class="evento-date">25-06-2026</div>
+                    <h2 class="evento-title">Certamen de Cine Celta</h2>
+                    <div class="evento-location">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Casa de Cultura, Ribadesella
+                    </div>
+                    <p class="evento-desc">Proyección de cortometrajes independientes del arco atlántico.</p>
+                    <a href="#" class="btn-event btn-blue">Ver evento &rarr;</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter/X">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4l11.73 16h5L9 4H4z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z">
+                        </path>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                    </svg>
+                </a>
+            </div>
+            <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem;">
+                &copy; 2026 HAPPINESS&Co. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
