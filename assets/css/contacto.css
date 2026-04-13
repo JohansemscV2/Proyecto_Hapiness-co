@@ -1,0 +1,284 @@
+/* assets/css/contacto.css - DISEÑO DE CONTACTO PREMIUM */
+
+:root {
+    --glass-bg: rgba(20, 22, 35, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --neon-pink: #ba007c;
+    --neon-blue: #009bdb;
+}
+
+/* Background floating shapes (reused from about or customized) */
+.bg-shape {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -2;
+    opacity: 0.35;
+    animation: drift 25s infinite alternate ease-in-out;
+}
+
+.shape-contact-1 {
+    width: 600px;
+    height: 600px;
+    background: var(--neon-blue);
+    top: -20%;
+    right: -10%;
+}
+
+.shape-contact-2 {
+    width: 500px;
+    height: 500px;
+    background: var(--neon-pink);
+    bottom: -10%;
+    left: -10%;
+    animation-delay: -5s;
+}
+
+@keyframes drift {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-80px, 50px); }
+    100% { transform: translate(30px, -80px); }
+}
+
+/* Main Contact Layout */
+.contact-section {
+    padding: 6rem 0;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 4rem;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, transparent 100%);
+    border: 1px solid var(--glass-border);
+    border-radius: 30px;
+    padding: 4rem;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glass shine on the container */
+.contact-grid::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 50%; height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.05), transparent);
+    transform: skewX(-20deg);
+    animation: shineSweep 8s infinite;
+    z-index: -1;
+}
+
+@keyframes shineSweep {
+    0% { left: -100%; }
+    20% { left: 200%; }
+    100% { left: 200%; }
+}
+
+/* LEFT: Info Section */
+.contact-info {
+    position: relative;
+}
+
+.contact-info h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #fff 0%, #a0a0a0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+}
+
+.contact-info .lead {
+    color: rgba(255,255,255,0.7);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+.info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(0,0,0,0.2);
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.03);
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    background: rgba(255,255,255,0.02);
+    border-color: rgba(0, 155, 219, 0.4);
+    transform: translateX(10px);
+}
+
+.icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(0, 155, 219, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--neon-blue);
+    flex-shrink: 0;
+}
+
+.icon-box.pink-tint {
+    background: rgba(186, 0, 124, 0.1);
+    color: var(--neon-pink);
+}
+
+.info-card h3 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+
+.info-card p, .info-card a {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.info-card a:hover {
+    color: var(--neon-blue);
+}
+
+/* RIGHT: Form Section */
+.contact-form-wrapper {
+    background: rgba(0,0,0,0.4);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+    padding: 10px 0;
+    font-size: 1.05rem;
+    color: #fff;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.form-control:focus {
+    border-bottom-color: var(--neon-pink);
+}
+
+/* Floating Label Animation */
+.floating-label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: rgba(255,255,255,0.5);
+    font-size: 1.05rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus ~ .floating-label,
+.form-control:valid ~ .floating-label {
+    top: -15px;
+    font-size: 0.85rem;
+    color: var(--neon-pink);
+}
+
+textarea.form-control {
+    resize: none;
+    height: 100px;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    background: linear-gradient(135deg, var(--neon-pink), #ff4d94);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 30px rgba(186, 0, 124, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(186, 0, 124, 0.6);
+}
+
+/* Form success message state (hidden initially) */
+.form-success {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(40, 167, 69, 0.1);
+    border: 1px solid rgba(40, 167, 69, 0.3);
+    border-radius: 12px;
+    color: #28a745;
+    margin-top: 2rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        padding: 3rem 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .contact-section {
+        padding: 3rem 0;
+    }
+    .contact-grid {
+        padding: 2rem 1.5rem;
+        gap: 3rem;
+    }
+    .contact-info h1 {
+        font-size: 2.5rem;
+    }
+}
