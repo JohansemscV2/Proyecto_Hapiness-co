@@ -151,6 +151,18 @@ header .container {
     text-shadow: 0 0 15px rgba(255, 20, 147, 0.6);
 }
 
+.logo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    transition: all var(--transition-fast);
+    filter: brightness(1);
+}
+
+.logo:hover img {
+    filter: brightness(1.15) drop-shadow(0 0 8px rgba(255, 20, 147, 0.5));
+}
+
 nav ul {
     display: flex;
     gap: 8px;
