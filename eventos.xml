@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Happiness&amp;Co - Próximos Eventos</title>
+    <link>https://happinessandco.es/proximos-eventos.html</link>
+    <description>Catálogo de los próximos eventos, exposiciones, obras de teatro y conciertos organizados por Happiness&amp;Co en la región de Asturias y España.</description>
+    <language>es-ES</language>
+    <lastBuildDate>Thu, 16 Apr 2026 08:30:00 +0200</lastBuildDate>
+
+    <item>
+      <title>Festival de Jazz Nocturno</title>
+      <link>https://happinessandco.es/jazz-nocturno.html</link>
+      <description>Noche de improvisaciones jazz con bandas locales. Lugar: Laboral Teatro. Fecha: 10-07-2026.</description>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +0200</pubDate>
+      <guid isPermaLink="true">https://happinessandco.es/jazz-nocturno.html</guid>
+    </item>
+
+    <item>
+      <title>Xixón Folk Festival</title>
+      <link>https://happinessandco.es/xixon-folk.html</link>
+      <description>Gaitas y conciertos folk en vivo. Lugar: Parque Fluvial. Fecha: 25-06-2026.</description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0200</pubDate>
+      <guid isPermaLink="true">https://happinessandco.es/xixon-folk.html</guid>
+    </item>
+
+    <item>
+      <title>Primera Feria de Plantas</title>
+      <link>https://happinessandco.es/feria-plantas.html</link>
+      <description>Plantas exóticas y locales. Lugar: Jardín Botánico. Fecha: 15-06-2026.</description>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0200</pubDate>
+      <guid isPermaLink="true">https://happinessandco.es/feria-plantas.html</guid>
+    </item>
+
+    <item>
+      <title>Arte Urbano Astur</title>
+      <link>https://happinessandco.es/arte-urbano.html</link>
+      <description>Graffiti y street art de artistas emergentes de Asturias, interactivo y fotogénico. Lugar: Centro Niemeyer, Avilés. Fecha: 05-08-2026.</description>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0200</pubDate>
+      <guid isPermaLink="true">https://happinessandco.es/arte-urbano.html</guid>
+    </item>
+
+    <item>
+      <title>Ópera "El Mar Astur"</title>
+      <link>https://happinessandco.es/opera-mar-astur.html</link>
+      <description>Drama lírico sobre leyendas marítimas locales. Lugar: Teatro Campoamor, Oviedo. Fecha: 14-08-2026.</description>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0200</pubDate>
+      <guid isPermaLink="true">https://happinessandco.es/opera-mar-astur.html</guid>
+    </item>
+
+    <item>
+      <title>Mercado Artesanal</title>
+      <link>https://happinessandco.es/mercado-artesanal.html</link>
+      <description>Artesanía local, gastronomía y talleres. Lugar: Plaza del Parchís, Llanes. Fecha: 09-09-2026.</description>
+      <pubDate>Wed, 09 Sep 2026 00:00:00 +0200</pubDate>
+      <guid isPermaLink="true">https://happinessandco.es/mercado-artesanal.html</guid>
+    </item>
+
+    <item>
+      <title>American Buffalo</title>
+      <link>https://happinessandco.es/american-buffalo.html</link>
+      <description>Drama Mamet sobre ambición y traición. Lugar: Teatro Jovellanos. Fecha: 05-06-2026.</description>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0200</pubDate>
+      <guid isPermaLink="true">https://happinessandco.es/american-buffalo.html</guid>
+    </item>
+
+    <item>
+      <title>Festival de la Sidra Artesana</title>
+      <link>https://happinessandco.es/festival-sidra.html</link>
+      <description>Cata de sidras, escanciado y música tradicional asturiana frente al mar. Lugar: Puerto de Gijón. Fecha: 05-06-2026.</description>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0200</pubDate>
+      <guid isPermaLink="true">https://happinessandco.es/festival-sidra.html</guid>
+    </item>
+
+    <item>
+      <title>Ruta Senderista Románica</title>
+      <link>https://happinessandco.es/ruta-senderista.html</link>
+      <description>Visita cultural para conocer los secretos de la arquitectura prerrománica y senderismo. Lugar: Santa María del Naranco, Oviedo. Fecha: 15-06-2026.</description>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0200</pubDate>
+      <guid isPermaLink="true">https://happinessandco.es/ruta-senderista.html</guid>
+    </item>
+
+    <item>
+      <title>Certamen de Cine Celta</title>
+      <link>https://happinessandco.es/cine-celta.html</link>
+      <description>Proyección de cortometrajes independientes del arco atlántico. Lugar: Casa de Cultura, Ribadesella. Fecha: 25-06-2026.</description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0200</pubDate>
+      <guid isPermaLink="true">https://happinessandco.es/cine-celta.html</guid>
+    </item>
+
+  </channel>
+</rss>
