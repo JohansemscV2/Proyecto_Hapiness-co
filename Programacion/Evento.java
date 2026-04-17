@@ -19,21 +19,57 @@ public class Evento {
         this.galerias = new ArrayList<>();
     }
 
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
-    public String getFecha() { return fecha; }
-    public void setFecha(String fecha) { this.fecha = fecha; }
-    public String getTitulo() { return titulo; }
-    public void setTitulo(String titulo) { this.titulo = titulo; }
-    public String getUbicacion() { return ubicacion; }
-    public void setUbicacion(String ubicacion) { this.ubicacion = ubicacion; }
-    public String getDescripcion() { return descripcion; }
-    public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
-    public ArrayList<Galeria> getGalerias() { return galerias; }
-    public void setGalerias(ArrayList<Galeria> galerias) { this.galerias = galerias; }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public ArrayList<Galeria> getGalerias() {
+        return galerias;
+    }
+
+    public void setGalerias(ArrayList<Galeria> galerias) {
+        this.galerias = galerias;
+    }
 
     @Override
     public String toString() {
-        return "Evento{id=" + id + ", fecha='" + fecha + "', titulo='" + titulo + "', ubicacion='" + ubicacion + "', descripcion='" + descripcion + "', galerias=" + galerias + "}";
+        return "Evento{id=" + id + ", fecha='" + fecha + "', titulo='" + titulo + "', ubicacion='" + ubicacion
+                + "', descripcion='" + descripcion + "', galerias=" + galerias + "}";
     }
 }

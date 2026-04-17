@@ -9,10 +9,21 @@ public class Favorito {
         this.idEvento = idEvento;
     }
 
-    public String getCorreoUsuario() { return correoUsuario; }
-    public void setCorreoUsuario(String correoUsuario) { this.correoUsuario = correoUsuario; }
-    public int getIdEvento() { return idEvento; }
-    public void setIdEvento(int idEvento) { this.idEvento = idEvento; }
+    public String getCorreoUsuario() {
+        return correoUsuario;
+    }
+
+    public void setCorreoUsuario(String correoUsuario) {
+        this.correoUsuario = correoUsuario;
+    }
+
+    public int getIdEvento() {
+        return idEvento;
+    }
+
+    public void setIdEvento(int idEvento) {
+        this.idEvento = idEvento;
+    }
 
     @Override
     public String toString() {
