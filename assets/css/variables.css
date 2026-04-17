@@ -1,17 +1,17 @@
 /* assets/css/variables.css */
 :root {
-    /* Colores basados en el mockup */
-    --color-primary: #FF1493; /* Rosa brillante (DeepPink) */
+
+    --color-primary: #FF1493;
     --color-primary-hover: #ff47a5;
-    --color-background-dark: #121420; /* Azul oscuro navi */
-    --color-background-header: #0d0f18; /* Header un poco más oscuro */
-    --color-background-card: rgba(255, 255, 255, 0.95); /* Blanco para las tarjetas */
+    --color-background-dark: #121420;
+    --color-background-header: #0d0f18;
+    --color-background-card: rgba(255, 255, 255, 0.95);
     --color-text-light: #F4F4F9;
     --color-text-dark: #1F2233;
-    
-    /* Tipografía */
+
+
     --font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
-    
+
     /* Variables de Espaciado y Layout */
     --header-height: 80px;
     --spacing-xs: 4px;
@@ -22,14 +22,14 @@
     --border-radius-sm: 8px;
     --border-radius-md: 16px;
     --border-radius-lg: 24px;
-    
-    /* Sombras y Efectos */
+
+
     --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.15);
     --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.3);
     --shadow-primary: 0 8px 24px rgba(255, 20, 147, 0.25);
-    
-    /* Transiciones para animaciones */
+
+
     --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-medium: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);

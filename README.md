@@ -2,7 +2,8 @@
   <img src="assets/Img/Happiness&amp;co Logos/happines-and-co-propuesta-06.jpg" alt="Happiness&Co Logo" width="250"/>
   
   <h1>🌟 Happiness &amp; Co</h1>
-  <p><strong>La plataforma definitiva de gestión y descubrimiento de eventos en Asturias y España.</strong></p>
+  <p><strong>Proyecto académico de 1º de DAW (Desarrollo de Aplicaciones Web)</strong></p>
+  <p><em>Plataforma integral de gestión y descubrimiento de eventos en Asturias y España.</em></p>
 
   <p>
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
@@ -16,10 +17,9 @@
 
 ## 📖 Descripción del Proyecto
 
-**Happiness & Co** es una plataforma integral desarrollada para gestionar y mostrar eventos, festivales, obras de teatro y exposiciones. El proyecto entrelaza una moderna e impactante interfaz web (Frontend) con un sólido núcleo de lógica y estructuras de datos (Java).
+**Happiness & Co** es un proyecto de de primero de DAW **1º de DAW (Desarrollo de Aplicaciones Web)**. La pagina web es para una agenda cultural, festivales, obras de teatro y exposiciones. El proyecto entrelaza de manera técnica una moderna interfaz web con un sólido núcleo de lógica orientada a objetos y estructuras de datos (Programación en Java).
 
-Con un fuerte enfoque en el diseño UX/UI, la plataforma luce una estética **Premium Dark Mode**, con efectos de *glassmorphism*, sutiles microanimaciones y paletas de colores armónicas que ofrecen una experiencia visual inolvidable.
-
+Con un fuerte enfoque en asimilar las competencias del curso, la plataforma luce una estética.
 ---
 
 ## ✨ Características Principales

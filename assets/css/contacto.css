@@ -7,7 +7,7 @@
     --neon-blue: #009bdb;
 }
 
-/* Background floating shapes (reused from about or customized) */
+
 .bg-shape {
     position: fixed;
     border-radius: 50%;
@@ -63,7 +63,7 @@
     overflow: hidden;
 }
 
-/* Glass shine on the container */
+
 .contact-grid::before {
     content: '';
     position: absolute;
@@ -201,7 +201,7 @@
     border-bottom-color: var(--neon-pink);
 }
 
-/* Floating Label Animation */
+
 .floating-label {
     position: absolute;
     top: 10px;
@@ -224,7 +224,7 @@ textarea.form-control {
     height: 100px;
 }
 
-/* Submit Button */
+
 .btn-submit {
     width: 100%;
     background: linear-gradient(135deg, var(--neon-pink), #ff4d94);
@@ -247,7 +247,7 @@ textarea.form-control {
     box-shadow: 0 15px 40px rgba(186, 0, 124, 0.6);
 }
 
-/* Form success message state (hidden initially) */
+
 .form-success {
     display: none;
     text-align: center;
