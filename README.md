@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/Img/Happiness&amp;co Logos/happines-and-co-propuesta-06.jpg" alt="Happiness&Co Logo" width="250"/>
+  <img src="Lenguaje de marcas/assets/Img/Happiness&amp;co Logos/happines-and-co-propuesta-06.jpg" alt="Happiness&Co Logo" width="250"/>
   
   <h1>🌟 Happiness &amp; Co</h1>
   <p><strong>Proyecto académico de 1º de DAW (Desarrollo de Aplicaciones Web)</strong></p>
